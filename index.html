@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Hincapié</title>
+    <link rel="shortcut icon" href="/Components/IMG/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Components/codexs/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Components/IMG/logo2.png" alt="Logo Andrés Hincapié">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#sobre-mi" style="--i:0">SOBRE MÍ</a></li>
+                    <li><a href="#proyectos" style="--i:1">PROYECTOS</a></li>
+                    <li><a href="#formacion" style="--i:2">FORMACIÓN</a></li>
+                    <li><a href="#experiencia" style="--i:3">EXPERIENCIA</a></li>
+                    <li><a href="#contacto" style="--i:4">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-imagen">
+                <img src="/Components/IMG/imagen1.jpeg" alt="Andrés Hincapié">
+            </div>
+            <div class="sobre-mi-contenido">
+                <div class="titulo-animado">
+                    <h2>Andrés Hincapié Ruiz</h2>
+                    <div class="iconos-tech">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-node-js" title="Node.js"></i>
+                        <i class="fab fa-docker" title="Docker"></i>
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-java" title="Java"></i>
+                        <i class="devicon-cplusplus-plain" title="C++"></i>
+                        <i class="devicon-flutter-plain" title="Flutter"></i>
+
+
+
+                    </div>
+                </div>
+                <h3><span class="typed"></span></h3>
+                <p>Profesional en Tecnología y Desarrollo de Software en formación, con experiencia en Infraestructura TIC, Desarrollo de Software e Interfaces de Usuario. Conozco diversos lenguajes de programación, metodologías y herramientas para gestionar y desarrollar sistemas de manera eficiente.</p>
+                <div class="botones-accion">
+                    <a href="#contacto" class="btn btn-primario">Contrátame</a>
+                    <a href="#proyectos" class="btn btn-secundario">Ver Proyectos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <div class="proyectos-container">
+            <h2>Mis Proyectos</h2>
+            
+            <!-- Filtros de proyectos -->
+            <div class="proyectos-filtros">
+                <button class="filtro-btn activo" data-filter="todos">
+                    <i class="fas fa-th-large"></i> Todos
+                </button>
+                <button class="filtro-btn" data-filter="gratuitos">
+                    <i class="fas fa-gift"></i> Gratuitos
+                </button>
+                <button class="filtro-btn" data-filter="premium">
+                    <i class="fas fa-crown"></i> Premium
+                </button>
+            </div>
+
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                 <!-- Proyecto Jarvis -->
+                <div class="proyecto-card" data-categoria="premium">
+                    <span class="proyecto-fecha">2024</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/proyecto3.png" alt="Jarvis AI Assistant">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Jarvis AI Assistant</h3>
+                        <p>Asistente virtual inspirado en la IA de Tony Stark, capaz de crear documentos, mantener conversaciones naturales y mucho mas.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-android" title="Android"></i>
+                            <i class="fab fa-apple" title="iOS"></i>
+                            <i class="fas fa-microchip" title="Machine Learning"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto" target="_blank">
+                                <i class="fas fa-shopping-cart"></i>Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corrección del Proyecto Hotel 
+                <div class="proyecto-card">
+                    <span class="proyecto-fecha">2024</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/hotel-system.jpg" alt="Sistema de Gestión Hotelera">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Sistema de Gestión Hotelera</h3>
+                        <p>Aplicación completa para la gestión hotelera que incluye reservas de habitaciones, 
+                           gestión de estados, sistema de autenticación dual (administrador/usuario), 
+                           y panel de administración completo.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-java" title="Java"></i>
+                            <i class="devicon-mysql-plain" title="MySQL"></i>
+                            <i class="devicon-spring-plain" title="Spring Framework"></i>
+                            <i class="devicon-javafx-plain" title="JavaFX"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto btn-comprar" target="_blank">
+                                <i class="fas fa-shopping-cart"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card" data-categoria="gratuitos">
+                    <span class="proyecto-fecha">2023</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/mobile-app.jpg" alt="App Educativa POO">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>POO Learning App</h3>
+                        <p>Aplicación educativa interactiva para aprender Programación Orientada a Objetos con ejemplos prácticos y ejercicios.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="devicon-cplusplus-plain" title="C++"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto Traductor Morse -->
+                <div class="proyecto-card" data-categoria="gratuitos">
+                    <span class="proyecto-fecha">2018</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/morse.jpg" alt="Traductor Morse">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Traductor Código Morse</h3>
+                        <p>Aplicación que permite traducir texto a código morse y viceversa, con soporte para reproducción de sonidos y señales visuales.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-volume-up" title="Audio"></i>
+                            <i class="fas fa-lightbulb" title="Señales Visuales"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto Iron Man -->
+                <div class="proyecto-card" data-categoria="gratuitos">
+                    <span class="proyecto-fecha">2018</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/proyecto1.png" alt="Iron Man Space Battle">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Iron Man: Space Battle</h3>
+                        <p>Juego arcade desarrollado en Python donde controlas a Iron Man en una batalla espacial.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="devicon-pygame-plain" title="Pygame"></i>
+                            <i class="devicon-numpy-original" title="NumPy"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="https://github.com/tuUsuario/ironman-game" class="btn-proyecto" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto Calculadora Python -->
+                <div class="proyecto-card" data-categoria="gratuitos">
+                    <span class="proyecto-fecha">2018</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/calculadora.jpg" alt="Calculadora Python">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Calculadora Avanzada</h3>
+                        <p>Calculadora con interfaz gráfica desarrollada en Python, capaz de realizar operaciones matemáticas complejas y conversiones de unidades.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="devicon-tkinter-plain" title="Tkinter"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Proyecto HRZ YouTube Downloader -->
+                <div class="proyecto-card" data-categoria="premium">
+                    <span class="proyecto-fecha">2024</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/hrz-youtube.jpg" alt="HRZ YouTube Downloader">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>HRZ YouTube Downloader</h3>
+                        <p>Aplicación portátil para descargar videos y música de YouTube en múltiples formatos. Incluye conversión automática, selector de calidad y organización de biblioteca multimedia.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-qt" title="Qt Framework"></i>
+                            <i class="fas fa-database" title="SQLite"></i>
+                            <i class="fas fa-music" title="Audio Processing"></i>
+                            <i class="fas fa-video" title="Video Processing"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto" target="_blank">
+                                <i class="fas fa-shopping-cart"></i> $5 USD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Proyecto HRZ System Optimizer -->
+                <div class="proyecto-card" data-categoria="premium">
+                    <span class="proyecto-fecha">2024</span>
+                    <div class="proyecto-imagen">
+                        <img src="/Components/IMG/hrz-optimizer.jpg" alt="HRZ System Optimizer">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>HRZ System Optimizer</h3>
+                        <p>Herramienta portátil todo en uno para optimización y mantenimiento de sistemas. Incluye limpieza de archivos temporales, optimización de DNS, cambio de MAC, desfragmentación, y más características avanzadas para el rendimiento del sistema.</p>
+                        <div class="proyecto-tecnologias">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-windows" title="Windows"></i>
+                            <i class="fas fa-network-wired" title="Network Tools"></i>
+                            <i class="fas fa-memory" title="System Optimization"></i>
+                            <i class="fas fa-shield-alt" title="Security Features"></i>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proyecto" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn-proyecto" target="_blank">
+                                <i class="fas fa-shopping-cart"></i> $5 USD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ver-mas-container">
+                <button id="verMasProyectosBtn" class="btn-ver-mas">
+                    <span>Ver Más Proyectos</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <button id="verMenosProyectosBtn" class="btn-ver-mas oculto">
+                    <span>Ver Menos</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" class="formacion">
+        <div class="formacion-container">
+            <h2>Formación Académica</h2>
+            
+            <!-- Timeline Principal -->
+            <div class="timeline" id="timeline">
+                <!-- Elemento Actual -->
+                <div class="timeline-item current">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-tag">Actual</div>
+                        <h3>Tecnología en Desarrollo de Software</h3>
+                        <p class="timeline-place">Universidad del Valle, Yumbo</p>
+                        <p class="timeline-date">2023 - 2026</p>
+                        <div class="tags-container">
+                            <span class="tag"><i class="fab fa-java"></i> Java</span>
+                            <span class="tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tag"><i class="fas fa-database"></i> SQL</span>
+                            <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otros elementos -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>DevOps y Control de Versiones</h3>
+                        <p class="timeline-place">Formación Online</p>
+                        <p class="timeline-date">2023</p>
+                        <div class="tags-container">
+                            <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="tag"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tag"><i class="fab fa-jenkins"></i> Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Desarrollo Móvil</h3>
+                        <p class="timeline-place">Formación Online</p>
+                        <p class="timeline-date">2022</p>
+                        <div class="tags-container">
+                            <span class="tag"><i class="fab fa-android"></i> Android</span>
+                            <span class="tag"><i class="fab fa-apple"></i> iOS</span>
+                            <span class="tag"><i class="fas fa-mobile-alt"></i> Flutter</span>
+                            <span class="tag"><i class="fab fa-react"></i> React Native</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <p class="timeline-place">Formación Online</p>
+                        <p class="timeline-date">2021</p>
+                        <div class="tags-container">
+                            <span class="tag"><i class="fab fa-react"></i> React</span>
+                            <span class="tag"><i class="fab fa-node"></i> Node.js</span>
+                            <span class="tag"><i class="fas fa-database"></i> MongoDB</span>
+                            <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ver-mas-container">
+                <button id="verMasBtn" class="btn-ver-mas">
+                    <span>Ver más formación</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <button id="verMenosBtn" class="btn-ver-mas oculto">
+                    <span>Ver menos</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="experiencia">
+        <div class="experiencia-container">
+            <h2>Experiencia Profesional</h2>
+            <div class="experiencia-timeline" id="experiencia-timeline">
+                <!-- Experiencia 1: Proyecto Jarvis -->
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <div class="experiencia-empresa">
+                            <img src="/Components/IMG/proyecto3.png" alt="Jarvis AI" class="empresa-logo">
+                            <div class="empresa-info">
+                                <h3>Jarvis AI Assistant</h3>
+                                <p class="empresa-ubicacion">Proyecto Personal</p>
+                            </div>
+                        </div>
+                        <div class="experiencia-periodo">
+                            <span class="fecha-actual">Actual</span>
+                            <p>2024 - Presente</p>
+                        </div>
+                    </div>
+                    <p class="experiencia-posicion">Desarrollador Principal & Arquitecto de IA</p>
+                    <ul class="experiencia-logros">
+                        <li>Desarrollo de un asistente virtual avanzado inspirado en la IA de Iron Man utilizando redes neuronales propias</li>
+                        <li>Diseño e implementación de arquitectura de red neuronal para procesamiento de lenguaje natural y síntesis de voz</li>
+                        <li>Desarrollo de APIs propias y sistemas de backend para el procesamiento de IA desde cero</li>
+                        <li>Creación de modelos de machine learning personalizados para comprensión contextual y generación de respuestas</li>
+                    </ul>
+                    <div class="experiencia-tecnologias">
+                        <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-tag"><i class="fas fa-microchip"></i> Machine Learning</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fab fa-android"></i> Android</span>
+                        <span class="tech-tag"><i class="fab fa-apple"></i> iOS</span>
+                    </div>
+                </div>
+
+                <!-- Experiencia 2: Plataforma de Entretenimiento -->
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <div class="experiencia-empresa">
+                            <img src="/Components/IMG/streaming-logo.png" alt="Plataforma Streaming" class="empresa-logo">
+                            <div class="empresa-info">
+                                <h3>StreamFlix - Plataforma de Streaming</h3>
+                                <p class="empresa-ubicacion">Proyecto Personal</p>
+                            </div>
+                        </div>
+                        <div class="experiencia-periodo">
+                            <p>2023 - 2024</p>
+                        </div>
+                    </div>
+                    <p class="experiencia-posicion">Desarrollador Full Stack</p>
+                    <ul class="experiencia-logros">
+                        <li>Desarrollo de una plataforma de streaming con interfaz similar a Netflix</li>
+                        <li>Implementación de sistema de recomendaciones personalizado</li>
+                        <li>Gestión de contenido multimedia y streaming adaptativo</li>
+                        <li>Desarrollo de aplicaciones móviles nativas para iOS y Android</li>
+                    </ul>
+                    <div class="experiencia-tecnologias">
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fab fa-node"></i> Node.js</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tech-tag"><i class="fab fa-flutter"></i> Flutter</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ver-mas-container">
+                <button id="verMasExpBtn" class="btn-ver-mas">
+                    <span>Ver más experiencia</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <button id="verMenosExpBtn" class="btn-ver-mas oculto" style="display: none;">
+                    <span>Ver menos</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contacto-container">
+            <h2>Contáctame</h2>
+            <p class="contacto-descripcion">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            
+            <div class="contacto-grid">
+                <!-- Formulario de contacto -->
+                <div class="contacto-form-container">
+                    <form id="contactForm" class="contacto-form">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="asunto" name="asunto" required>
+                            <label for="asunto">Asunto</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn-enviar">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="contacto-info">
+                    <div class="info-card">
+                        <h3>Conectemos</h3>
+                        <p>Disponible para proyectos freelance, desarrollo de software y consultoría tecnológica.</p>
+                        
+                        <div class="contacto-metodos">
+                            <a href="mailto:tu@email.com" class="metodo-contacto email">
+                                <i class="fas fa-envelope"></i>
+                                <div class="metodo-info">
+                                    <h4>Email</h4>
+                                    <p>tu@email.com</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/1234567890" class="metodo-contacto whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="metodo-info">
+                                    <h4>WhatsApp</h4>
+                                    <p>+57 350 787 0584</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="redes-sociales">
+                            <h4>Sígueme en</h4>
+                            <div class="redes-icons">
+                                <a href="#" target="_blank" class="red-social linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" target="_blank" class="red-social github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="red-social instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank" class="red-social twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/Components/codexs/script.js"></script>
+<div class="lightbox" id="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+</html>
