@@ -297,7 +297,7 @@ const experienciasAdicionales = [
         empresa: "Peru Inka",
         ubicacion: "Lima, Perú (Remoto)",
         periodo: "2022 - 2023",
-        logo: "/Components/IMG/WDR.png",
+        logo: "/Components/IMG/WDR.jpeg",
         logros: [
             "Desarrollo de WDR (Web Document Register), una aplicación web completa para gestión y edición de documentos",
             "Diseño e implementación de API RESTful para la gestión documental y autenticación",
