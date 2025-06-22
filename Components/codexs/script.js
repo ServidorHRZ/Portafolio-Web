@@ -27,18 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Cerrar el menú al hacer clic en un enlace
+    // Cerrar el menú al hacer clic en un enlace (solo en móvil)
     document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-            body.style.overflow = '';
-            header.style.backgroundColor = 'var(--color-primario)';
-            
-            // Retrasar la ocultación del menú
-            setTimeout(() => {
-                navMenu.style.visibility = 'hidden';
-            }, 400);
+            // Solo aplicar el comportamiento de cierre en dispositivos móviles
+            if (window.innerWidth <= 768) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.style.overflow = '';
+                header.style.backgroundColor = 'var(--color-primario)';
+                
+                // Retrasar la ocultación del menú
+                setTimeout(() => {
+                    navMenu.style.visibility = 'hidden';
+                }, 400);
+            }
         });
     });
 });

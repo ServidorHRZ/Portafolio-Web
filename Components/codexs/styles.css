@@ -161,9 +161,13 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 768px) {
+    .logo img {
+        height: 45px;
+    }
+
     .menu-toggle {
         display: block;
-        z-index: 100;
+        z-index: 1002;
     }
 
     .nav-menu {
@@ -1545,7 +1549,7 @@ main {
         opacity: 0;
         transform: translateX(-100%);
         transition: all 0.2s ease-in-out;
-        z-index: 98;
+        z-index: 1001;
     }
 
     .nav-menu.active {
@@ -1579,7 +1583,7 @@ main {
     }
 
     .nav-menu a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem 2rem;
         display: block;
         width: 100%;
